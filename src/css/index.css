@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+body{
+    background-color: #F9FAFB;
+    font-family: "Lato", sans-serif;
+}
+
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.active{
+    background-color: #20ae5e;
+    color: white;
+}
