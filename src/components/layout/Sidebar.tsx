@@ -8,7 +8,7 @@ import { useDarkMode } from '../../context/DarkMode'
 export default function Sidebar() {
     const {isSun, setIsSun} = useDarkMode()
   return (
-    <div className={`w-65  flex flex-col justify-between fixed h-screen z-1 ${isSun ? "bg-black text-white shadow-[0px_3px_4px_0px_gray]" : "bg-white text-black shadow-[0px_3px_4px_0px_#0000001F]"}`}>
+    <div className={`w-65 z-2 flex flex-col justify-between fixed h-screen ${isSun ? "bg-black text-white shadow-[0px_3px_4px_0px_gray]" : "bg-white text-black shadow-[0px_3px_4px_0px_#0000001F]"}`}>
       <div>
         <div className='m-5 flex items-center justify-between'>
           <Link to="/">

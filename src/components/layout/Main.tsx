@@ -4,9 +4,9 @@ import Header from "./Header";
 
 
 export default function Main() {
-    const {isSun, setIsSun} = useDarkMode()
+    const {isSun} = useDarkMode()
   return (
-    <main className={`ml-65 flex flex-1 flex-col ${isSun ? "bg-black text-white" : "bg-[#F9FAFB] "}`}>
+    <main className={`ml-65 flex min-w-0 w-[calc(100%-260px)] flex-none flex-col ${isSun ? "bg-black text-white" : "bg-[#F9FAFB] "}`}>
         <Header/>
         <Context/>
     </main>

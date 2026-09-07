@@ -20,7 +20,7 @@ export default function Header() {
 
   const currentTitle = pageTitle[pathname] || "Dashboard"
   return (
-    <div className={`flex  items-center  justify-between bg-black shrink-0 p-[24px_44px_24px_24px] fixed w-[calc(100%-260px)] ${isSun ? "bg-black text-white shadow-[0_3px_4px_-1px_gray]" : "bg-white shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]"}`}>
+    <div className={`fixed left-65 right-0 z-1 flex min-w-0 items-center justify-between bg-black shrink-0 p-[24px_44px_24px_24px] ${isSun ? "bg-black text-white shadow-[0_3px_4px_-1px_gray]" : "bg-white shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]"}`}>
       <h1 className="font-bold text-[22px]">{currentTitle}</h1>
       <div className="flex gap-8 items-center">
         <div className="flex bg-[#F9FAFB] p-[15px_33px] rounded-[30px] w-102 items-center justify-between">

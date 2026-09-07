@@ -1,7 +1,9 @@
 import React from "react";
 import type { TableColumnsType, TableProps } from "antd";
 import { useDarkMode } from "../../../context/DarkMode";
-import { Table } from "antd";
+import { Button, Table } from "antd";
+import { DeleteOutlined, MessageOutlined } from "@ant-design/icons";
+import { DeleteIcon } from "lucide-react";
 
 enum Status {
   active = "Active",
@@ -18,6 +20,7 @@ interface DataType {
   totalSpend: string;
   status: Status;
 }
+
 
 const columns: TableColumnsType<DataType> = [
   {
@@ -54,6 +57,25 @@ const columns: TableColumnsType<DataType> = [
     title: "Status",
     dataIndex: "status",
     filterSearch: true,
+  },
+  {
+    title: "Actions",
+    dataIndex: "action",
+    render: (_, record) => (
+      <div className="flex">
+        <Button
+          type="text"
+          icon={<MessageOutlined />}
+          onClick={() => console.log("Message clicked for:", record.name)}
+          className={`!flex !items-center !justify-center `}
+        />
+        <Button 
+        type="text"
+        icon={<DeleteOutlined />}
+        onClick={() => console.log(record.key)}
+        />
+      </div>
+    ),
   },
 ];
 

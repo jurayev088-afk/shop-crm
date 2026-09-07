@@ -1,17 +1,17 @@
 @import "tailwindcss";
-
-
-body{
-    background-color: #F9FAFB;
-    font-family: "Lato", sans-serif;
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+body {
+  background-color: #F9FAFB;
+  font-family: "Lato", sans-serif;
 }
 
-body.dark-mode{
-    background-color: black;
-    color: white;
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.active{
-    background-color: #20ae5e;
-    color: white;
+.active {
+  background-color: #20ae5e;
+  color: #ffffff;
 }
