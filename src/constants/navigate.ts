@@ -1,4 +1,4 @@
-import { LayoutDashboardIcon, PlusCircle, Shapes, ShoppingCart, Users } from "lucide-react"
+import { LayoutDashboardIcon, LucideUserCircle, PlusCircle, Shapes, ShoppingCart, Users } from "lucide-react"
 import type { ElementType } from "react"
 
 interface NavSidebar {
@@ -13,5 +13,6 @@ export const sidebarRoutes: NavSidebar[] = [
     { id: "order", path: "/order", label: "Order Management", icon: ShoppingCart },
     { id: "custom", path: "/customers", label: "Customers", icon: Users },
     { id: "category", path: "/categories", label: "Categories", icon: Shapes },
-    { id: "add", path: "/addProduct", label: "Add Products", icon: PlusCircle }
+    { id: "add", path: "/addProduct", label: "Add Products", icon: PlusCircle },
+    { id: "profile", path: "/profile", label: "Profile", icon: LucideUserCircle }
 ]

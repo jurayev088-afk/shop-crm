@@ -6,7 +6,7 @@ import { sidebarRoutes } from '../../constants/navigate'
 import { LogOut } from 'lucide-react'
 import { useDarkMode } from '../../context/DarkMode'
 export default function Sidebar() {
-    const {isSun, setIsSun} = useDarkMode()
+    const {isSun} = useDarkMode()
   return (
     <div className={`w-65 z-2 flex flex-col justify-between fixed h-screen ${isSun ? "bg-black text-white shadow-[0px_3px_4px_0px_gray]" : "bg-white text-black shadow-[0px_3px_4px_0px_#0000001F]"}`}>
       <div>
@@ -22,7 +22,7 @@ export default function Sidebar() {
             {
               sidebarRoutes.map(item => (
                 <NavLink key={item.id} to={item.path} className={`flex items-center  m-[0px_14px] p-[10px_16px] gap-2.75 rounded-md`}>
-                  <item.icon size="19px" />
+                  <item.icon size="22px" />
                   <span>{item.label}</span>
                 </NavLink>
               ))

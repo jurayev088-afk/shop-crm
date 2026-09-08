@@ -11,6 +11,7 @@ export default function Header() {
     '/customers': "Customers",
     '/categories': "Categories",
     '/addProduct': "Add Products",
+    '/profile': "Profile"
   }
 
   const { pathname } = useLocation()

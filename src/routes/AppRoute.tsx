@@ -7,6 +7,7 @@ import Categories from "../features/categories/page/Categories";
 import Customers from "../features/customers/page/Customers";
 import LoginPage from "../features/auth/page/LoginPage";
 import NotFound from "../features/notFound/page/NotFound";
+import Profile from "../features/profiles/page/Profile";
 
 export default function AppRoute() {
     return (
@@ -19,6 +20,7 @@ export default function AppRoute() {
                     <Route path="/customers" element={<Customers />} />
                     <Route path="/categories" element={<Categories />} />
                     <Route path="/addProduct" element={<AddProduct />} />
+                    <Route path="/profile" element={<Profile />} />
                 </Route>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="*" element={<NotFound />} />
